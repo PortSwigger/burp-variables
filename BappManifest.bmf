@@ -1,0 +1,13 @@
+Uuid: 27f89b068a3045649d4df77a863209c1
+ExtensionType: 1
+Name: Burp Variables
+RepoName: burp-variables
+ScreenVersion: 1.1.6
+SerialVersion: 2
+MinPlatformVersion: 18
+ProOnly: False
+Author: 0xceba
+ShortDescription: Store and reuse variables in requests.
+EntryPoint: build/libs/burp_variables-1.1.6.jar
+BuildCommand: ./gradlew jar
+SupportedProducts: Pro, Community

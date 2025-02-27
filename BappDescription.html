@@ -1,0 +1,18 @@
+<p>This extension extends Burp to support variables, similar to Postman or Insomnia. Users can store and reuse values in Burp requests.</p>
+
+<h2>Features</h2>
+
+<ul>
+	<li>Supports referencing values in requests from Repeater, Proxy, Intruder, Scanner, or Extension</li>
+	<li>Variables are referenced with the notation <code>((variableName))</code>and can be included anywhere in the request</li>
+	<li>Data can be copied between projectds by using the import and export options, or using Burp's "Import project file" feature to import extension data (Pro only)</li>
+</ul>
+
+<h2>Usage</h2>
+
+<ol>
+	<li>Set the variable "name:value" pairs in the "Variables" tab</li>
+	<li>Reference the variables in any request, using the notation <code>((variableName))</code></li>
+	<li>Send the request</li>
+	<li>Confirm the variable references were replaced by viewing the request using the "Logger" tool</li>
+</ol>
