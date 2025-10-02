@@ -3,7 +3,7 @@ ExtensionType: 1
 Name: Burp Variables
 RepoName: burp-variables
 ScreenVersion: 1.1.7
-SerialVersion: 4
+SerialVersion: 5
 MinPlatformVersion: 23
 ProOnly: False
 Author: 0xceba
