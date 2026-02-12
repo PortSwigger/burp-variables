@@ -1,19 +1,29 @@
-<p>This extension adds variable support to Burp Suite, allowing users to save and reuse values in their requests, similar to features found in Postman or Insomnia.</p>
+<p>Burp Variables adds variable storage and replacement to Burp Suite. Define variables once and reference them across
+	requests using <code class="InlineCode">((variableName))</code> notation, similar to environment variables in
+	Postman or Insomnia.</p>
 
 <h2>Features</h2>
 
 <ul>
-	<li>Increases productivity by giving users a single place to update tokens, credentials, and identifiers for use in outgoing requests</li>
-	<li>Variables can be included in requests sent from the Repeater, Proxy, Intruder, Scanner, and Extension tools</li>
-	<li>Variables in requests sent through the Proxy tool are only replaced for requests within the project scope, ensuring variable values are not exposed to arbitrary destinations</li>
-	<li>Variable data can be copied between projects by using the import and export options</li>
+	<li>Store and manage variables in a dedicated tab, providing a single place to update tokens, credentials, and
+		identifiers</li>
+	<li>Variable references can be automatically replaced in outgoing requests from the Repeater, Proxy, Intruder,
+		Scanner, and Extensions tools</li>
+	<li>Proxy variable replacement is restricted to in-scope requests, preventing variable values from being sent to
+		unintended destinations</li>
+	<li>Auto-updating variables can extract values from HTTP responses using a regex capture group, keeping tokens and
+		session IDs current automatically</li>
+	<li>Use the right-click context menu in requests to insert variable references at the cursor or replace selected
+		text</li>
+	<li>Import and export variables as CSV for backup or sharing across projects</li>
 </ul>
 
 <h2>Usage</h2>
 
 <ol>
-	<li>Add variable name-value pairs to the table in the Variables tab</li>
-	<li>Add variable references to any outgoing request, using the notation <code>((variableName))</code></li>
-	<li>Send the request</li>
-	<li>Confirm the variable references were replaced by viewing the request using the "Logger" tool</li>
+	<li>Navigate to the "Variables" tab and add name-value pairs</li>
+	<li>Add variable references to any outgoing request, using the notation <code
+			class="InlineCode">((variableName))</code></li>
+	<li>Send the request. Variable references are replaced with their stored values before the request leaves Burp</li>
+	<li>Verify replacements occurred by inspecting the sent request in the "Logger" tool</li>
 </ol>
